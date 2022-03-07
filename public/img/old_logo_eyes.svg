@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 622.92 623.66" style="enable-background:new 0 0 622.92 623.66;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#332E2F;stroke-width:10;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#332E2F;stroke-width:17;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#332E2F;stroke-width:17;stroke-miterlimit:10;}
+</style>
+<circle id="l.iris" class="st0" cx="153.48" cy="272.81" r="14.24"/>
+<circle id="r.iris" class="st0" cx="352.48" cy="272.81" r="14.24"/>
+<path id="mask_1_" class="st1" d="M76.04,232.99H48.63c0,0-83.42,300.13,238.64,336.05c143.92-13.26,199.08-70.85,233.13-146.75
+	c38.48-85.79,8.52-189.3,8.52-189.3h-100.7c0,0,0.13,20.58-9.44,39.82c-9.81,19.72-29.77,38.08-66.31,36.5
+	c-27.22-1.18-43.26-11.42-54.8-23.53c-20.6-21.61-22.12-52.79-22.12-52.79h-43.38c-2.63,8.71,2.43,73.62-75.24,74.43
+	c-41.98,0.44-60.78-18.96-70.52-37.42C76.41,251.03,76.04,232.99,76.04,232.99z"/>
+<path id="mask" class="st1" d="M48.63,232.99l477.75,1.62c0,0-17.53-180.04-255.37-175.55C99.51,62.29,48.63,232.99,48.63,232.99z"
+	/>
+<circle class="st2" cx="292.08" cy="311.83" r="257.26"/>
+<path id="mouth" class="st3" d="M85.72,340.86c0,102.66,92.39,185.88,206.35,185.88s206.35-83.22,206.35-185.88H254.4"/>
+<path id="tooth" class="st3" d="M490.82,340.86c0,38.98-31.6,70.59-70.59,70.59s-70.59-31.6-70.59-70.59H490.82z"/>
+<path id="ear" class="st3" d="M528.92,390.9c51.45,0,59.18-41.66,59.18-93.04s-7.73-82.12-59.18-82.12v97.43"/>
+<path id="r.eye" class="st2" d="M84.44,233.11c0,33.71,31.62,70.21,69.04,70.21s67.76-27.33,67.76-61.03h-80.13"/>
+<path id="l.eye" class="st2" d="M284.26,234.61c0,33.71,30.8,68.72,68.22,68.72s67.76-27.33,67.76-61.03h-80.13"/>
+<line id="cross_1_" class="st2" x1="420.23" y1="196.93" x2="465.13" y2="152.04"/>
+<line id="cross" class="st2" x1="465.13" y1="196.93" x2="420.23" y2="152.04"/>
+</svg>

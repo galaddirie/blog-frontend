@@ -1,0 +1,184 @@
+.featured-card-img-container{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.post-card:hover{
+    transform: translateY(-5px); 
+    transition: .2s ease;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.082) !important;
+
+}
+
+.img-hover{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+}
+.img-hover img {
+    width: 105%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    transition: all 0.3s;
+}
+  
+  
+  
+.img-hover .hover-overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.144) 50%, rgba(0, 0, 0, 0.315));
+    width: 250px;
+    height: 250px;
+}
+  
+  
+  
+.img-hover:hover img {
+    left: 0;
+}
+  
+.img-hover:hover .hover-overlay {
+    opacity: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .img-hover{
+        max-width: 100%;
+    }
+    .img-hover img {
+        width: 105%;
+        height: auto;
+    }
+    .img-hover .hover-overlay{
+        width: 100%;
+    }
+}
+
+
+
+/*BLOG CARD NEW*/
+/* SNIPPET FROM https://codepen.io/ChynoDeluxe/pen/bdXeqQ*/
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+
+.blog-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+}
+.blog-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: top;
+    transition: transform 0.2s;
+    
+
+}
+.blog-card:hover .photo {
+    
+    transform: scale(1.3) rotate(3deg);
+
+}
+.blog-card .description {
+    padding: 1rem;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+} 
+.blog-card .description h3 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    font-weight: bold;
+
+    margin-top: 5px;
+}
+
+.blog-card .description a:hover{
+    text-decoration: solid !important;
+}
+
+.blog-card .description .read-more {
+    text-align: right;
+}
+.blog-card .description .read-more a {
+    color: #5ad67d;
+    display: inline-block;
+    position: relative;
+}
+.blog-card .description .read-more a:after {
+    content: "";
+    font-family: FontAwesome;
+    margin-left: -10px;
+    opacity: 0;
+    vertical-align: middle;
+    transition: margin 0.3s, opacity 0.3s;
+}
+.blog-card .description .read-more a:hover:after {
+    margin-left: 5px;
+    opacity: 1;
+}
+
+.badge:hover{
+    background-color: rgb(253, 0, 76) !important;
+}
+
+@media (min-width: 640px) {
+    .blog-card {
+        flex-direction: row;
+        max-width: 700px;
+    }
+    .blog-card .meta {
+        flex-basis: 40%;
+        height: auto;
+    }
+    .blog-card .description {
+        flex-basis: 60%;
+    }
+    .blog-card .description:before {
+        transform: skewX(-3deg);
+        content: "";
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .card-parent:nth-child(2n - 1) .blog-card.blog-card {
+        flex-direction: row-reverse;
+    }
+    .card-parent:nth-child(2n - 1) .blog-card.blog-card .description:before {
+        left: inherit;
+        right: -10px;
+        transform: skew(3deg);
+    }
+    .card-parent:nth-child(2n - 1) .blog-card.blog-card .details {
+        padding-left: 25px;
+    }
+    .blog-card .photo {
+        background-position: top;
+    }
+}

@@ -1,0 +1,90 @@
+.navbar-brand a{
+    color: black;
+}
+
+.navbar-brand:hover a{
+    color: #FF2867 ;
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: #FF2867 !important;
+}
+
+.nav-icon .bi{
+    color: black;
+    font-size: 1.2rem;
+}
+.nav-icon:hover .bi{
+    color: #FF2867;
+}
+
+
+.active span  {
+    color: #FF2867 !important;
+}
+
+/*Nav Item underline*/
+.item-underline-container{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.item-hover-underline{
+    opacity: 0;
+    background-color:back;
+    height: 2px;
+    transition: .2s ease-in-out;
+    width: 0%;
+    border-radius: 15px;
+
+
+}
+
+.active  .item-hover-underline{
+    opacity: 1;
+    width: 30%;
+    background-color: #FF2867;
+
+}
+
+.item-underline-container:hover .item-hover-underline{ 
+    opacity: 1;
+    width: 85%;  
+    background-color: #FF2867;
+
+}
+
+@media (max-width: 991px) {
+    
+    .custom-nav-background {
+        background-color: rgb(34, 34, 34);
+    }
+
+    .navbar-collapse .nav-link span{
+        margin-left: 20px;
+        
+    }
+
+    .active > .item-hover-underline{
+        width: 0%;
+        
+        
+    }
+
+    .item-underline-container:hover .item-hover-underline{ 
+        width: 0%;  
+
+    }
+
+    .active:hover  .item-hover-underline{ 
+        width: 0%;  
+
+    }  
+}
+
+@media screen and (max-width: 350px) {
+    .navbar-brand span{
+        display: none;
+    }
+}

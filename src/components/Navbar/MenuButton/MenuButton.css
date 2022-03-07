@@ -1,0 +1,61 @@
+/*Custom Navbar Menu Toggle*/
+.menuToggleCustomBtn{
+    border: none;
+}
+.menuToggleCustomBtn:focus{
+    box-shadow: none;
+}
+
+/* from https://codepen.io/JakobVesely/pen/ExejoK */
+
+
+#burgerButton{
+    position: relative;
+    width: 25px;
+    height: 15px;
+      
+    top: 50%;
+    left: 50%;
+    
+    margin-left: -13px;
+    margin-top: -8px,
+}
+  
+#burgerButton:hover{
+    cursor: pointer;
+}
+
+#burgerButton.fold_in:hover{
+    opacity: 0.5;
+    transition: all 100ms ease;
+}
+
+#burgerButton .line{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+}
+
+#burgerButton #line1{
+    top:0px;
+}
+
+#burgerButton #line2{
+    top:6px;
+}
+
+#burgerButton #line3{
+    top:12px;
+}
+
+/*
+#burgerButton.fold_in:hover #line1{
+top: -2px !important;
+}
+
+#burgerButton.fold_in:hover #line3{
+top: 14px !important;
+*/
+
+/* END OF SNIPPET*/

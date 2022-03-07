@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="-60.813 -10.101 592.239 550.843" xmlns="http://www.w3.org/2000/svg">
+  <path id="r.eye1" class="st4" d="M 22.863 162.518 C 22.863 196.228 21.681 252.023 88.687 248.807 C 155.693 245.591 161.742 200.252 161.742 166.552 L 84.035 165.909" style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255); stroke-miterlimit: 10; stroke-width: 17px;" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <path id="l.eye1" class="st4" d="M 218.824 166.59 C 218.824 200.3 236.117 250.746 290.903 249.46 C 345.689 248.174 364.277 202.76 364.277 169.06 L 276.603 167.849" style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255); stroke-miterlimit: 10; stroke-width: 17px;" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <g id="eyes" class="openEyes" transform="matrix(1, 0, 0, 1, -71.279976, -48.081282)" style="">
+    <circle id="l-iris" class="st0 eye" cx="153.48" cy="272.81" r="14.24" style="fill: none; stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 10px;"/>
+    <circle id="r-iris" class="st0 eye" cx="352.48" cy="272.81" r="14.24" style="fill: none; stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 10px;"/>
+    <set attributeName="visibility" from="visible" to="hidden" dur="1s" repeatCount="indefinite" restart="always" />
+  </g>
+  <path id="mask_1_" class="st1" d="M 14.463 179.12 L -12.947 179.12 C -12.947 179.12 -96.367 479.25 225.693 515.17 C 369.613 501.91 424.773 444.32 458.823 368.42 C 497.303 282.63 467.343 179.12 467.343 179.12 L 366.643 179.12 C 366.643 179.12 366.773 199.7 357.203 218.94 C 347.393 238.66 327.433 257.02 290.893 255.44 C 263.673 254.26 247.633 244.02 236.093 231.91 C 215.493 210.3 220.704 175.082 220.704 175.082 L 164.535 175.081 C 161.905 183.791 173.023 252.74 95.353 253.55 C 53.373 253.99 34.573 234.59 24.833 216.13 C 14.833 197.16 14.463 179.12 14.463 179.12 Z" style="fill: rgb(255, 255, 255);" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <path id="mask" class="st1" d="M -12.947 179.12 L 464.803 180.74 C 464.803 180.74 447.273 0.7 209.433 5.19 C 37.933 8.42 -12.947 179.12 -12.947 179.12 Z" style="fill: rgb(255, 255, 255);" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <circle class="st2" cx="230.503" cy="257.96" r="257.26" style="fill: none; stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 17px;" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <path id="mouth" class="st3" d="M 24.143 286.99 C 24.143 389.65 116.533 472.87 230.493 472.87 C 344.453 472.87 436.843 389.65 436.843 286.99 L 192.823 286.99" style="fill: rgb(255, 255, 255); stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 17px;" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <path id="tooth" class="st3" d="M 429.243 286.99 C 429.243 325.97 397.643 357.58 358.653 357.58 C 319.663 357.58 288.063 325.98 288.063 286.99 L 429.243 286.99 Z" style="fill: rgb(255, 255, 255); stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 17px;" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <path id="ear" class="st3" d="M 467.343 337.03 C 518.793 337.03 526.523 295.37 526.523 243.99 C 526.523 192.61 518.793 161.87 467.343 161.87 L 467.343 259.3" style="fill: rgb(255, 255, 255); stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 17px;" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <g class="openEyes" style="">
+    <path id="r.eye" class="st2" d="M 13.16 185.029 C 13.16 218.739 44.78 255.239 82.2 255.239 C 119.62 255.239 149.96 227.909 149.96 194.209 L 69.83 194.209" style="fill: none; stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 17px;"/>
+    <path id="l.eye" class="st2" d="M 212.98 186.529 C 212.98 220.239 243.78 255.249 281.2 255.249 C 318.62 255.249 348.96 227.919 348.96 194.219 L 268.83 194.219" style="fill: none; stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 17px;"/>
+    <set attributeName="visibility" from="visible" to="hidden" dur="1s" repeatCount="indefinite" />
+ </g>
+  <line id="cross_1_" class="st2" x1="358.653" y1="143.06" x2="403.553" y2="98.17" style="fill: none; stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 17px;" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <line id="cross" class="st2" x1="403.553" y1="143.06" x2="358.653" y2="98.17" style="fill: none; stroke: rgb(51, 46, 47); stroke-miterlimit: 10; stroke-width: 17px;" transform="matrix(1, 0, 0, 1, -9.703422, 5.788614)"/>
+  <g class="closeEyes" style="">
+    <rect x="25.121" y="216.789" width="116.227" height="17.928" style="paint-order: fill; stroke-opacity: 0; stroke: rgb(0, 0, 0); fill: rgb(51, 46, 47);"/>
+    <rect x="226.046" y="214.008" width="116.227" height="17.928" style="paint-order: fill; stroke-opacity: 0; stroke: rgb(0, 0, 0); fill: rgb(51, 46, 47);"/>
+  </g>
+</svg>
