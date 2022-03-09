@@ -171,7 +171,7 @@ function ArticlesFromTags() {
       <div className='' >
         <Row>
           {articles.data.map((post) => {
-            return <Col lg={6}>< PostCard key={post.id} data={post.attributes} /></Col>
+            return <Col lg={6} className="card-parent-ignore">< PostCard key={post.id} data={post.attributes} /></Col>
           })}
         </Row>
       </div>
