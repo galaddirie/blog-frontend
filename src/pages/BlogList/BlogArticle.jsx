@@ -150,14 +150,12 @@ export default function BlogArticle() {
 
                             </header>
 
-                            <figure className="mb-4"><img className="img-fluid rounded" src={`http://localhost:1337${post.cover.data.attributes.url}`} alt="..." width={'100%'} /></figure>
+                            <figure className="mb-4"><img className="img-fluid rounded" src={`${post.cover.data.attributes.url}`} alt="..." width={'100%'} /></figure>
                             <TableOfContent />
                             <section id="contents" className="mb-5 article-content">
                                 <ReactMarkdown
                                     children={`${post.body}`}
-                                    transformImageUri={uri =>
-                                        uri.startsWith("http") ? uri : `http://localhost:1337${uri}`
-                                    }
+
                                 />
                             </section>
                         </article>

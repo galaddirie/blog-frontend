@@ -37,7 +37,7 @@ function FeaturedPostCard(props) {
             <Card className="h-100 shadow border-0 post-card" >
                 <Link to={`/post/${post.slug}`}>
                     <div className="featured-card-img-container">
-                        <CardImg className="card-img-top" src={`${'http://localhost:1337' + post.cover.data.attributes.url}`} alt="post cover picture" />
+                        <CardImg className="card-img-top" src={`${post.cover.data.attributes.url}`} alt="post cover picture" />
                     </div>
 
                 </Link>
@@ -96,7 +96,7 @@ function FeaturePostLarge(props) {
                     <Col lg={6} xl={7}>
                         <Link to={`/post/${post.slug}`}>
                             {/* ${props.data.attributes.article.data.attributes.cover.data.attributes.url} */}
-                            <div className="bg-featured-blog" style={{ backgroundImage: `url(http://localhost:1337${post.cover.data.attributes.url} )` }}></div>
+                            <div className="bg-featured-blog" style={{ backgroundImage: `url(${post.cover.data.attributes.url} )` }}></div>
                         </Link>
                     </Col>
                 </Row>
@@ -156,14 +156,14 @@ function PostCardOld(props) {
 }
 function PostCard(props) {
     return (
-        <div class="blog-card my-4">
-            <div class="meta">
+        <div className="blog-card my-4">
+            <div className="meta">
                 <Link className="text-decoration-none" to={`/post/${props.data.slug}`}>
-                    <div class="photo" style={{ backgroundImage: `url(${'http://localhost:1337' + props.data.cover.data.attributes.url})` }}></div>
+                    <div className="photo" style={{ backgroundImage: `url(${props.data.cover.data.attributes.url})` }}></div>
                 </Link>
 
             </div>
-            <div class="description">
+            <div className="description">
                 <div className='tag-container'>
                     {props.data.tags.data.map((tag) => {
                         return <Card.Tag key={tag.attributes.value} data={tag} />
@@ -235,6 +235,7 @@ function FeaturedPosts() {
     const { loading, error, data } = useQuery(ARTICLES) // TODO FIX this
     if (loading) return (<Container><p>Loading...</p></Container>)
     if (error) return (<p>error</p>)
+    console.log(data)
     return (
         <section className="pb-5">
             <Container className="px-5 my-5">

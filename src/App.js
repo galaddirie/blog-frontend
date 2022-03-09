@@ -14,7 +14,7 @@ function Tuts() {
   )
 }
 const client = new ApolloClient({
-  uri: 'http://localhost:1337/graphql',
+  uri: 'https://galad-blog-backend.herokuapp.com/graphql', // 'https://galad-blog-backend.herokuapp.com/graphql', 'http://localhost:1337/graphql'
   cache: new InMemoryCache(),
 })
 function App() {
