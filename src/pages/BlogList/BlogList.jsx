@@ -109,7 +109,7 @@ query getArticleFromTags($value: String!){
         attributes{
           name
           value
-          articles{
+          articles(sort:"createdAt:desc"){
             data{
               attributes{
                 title
