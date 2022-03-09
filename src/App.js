@@ -1,7 +1,7 @@
 import Footer from "./components/Footer/Footer";
 
 import BlogNav from "./components/Navbar/Navbar";
-import { BrowserRouter as Router, Route, Routes, Link, } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client"
 import Home from "./pages/Home/Home";
 import { BlogList, ArticlesFromTags } from "./pages/BlogList/BlogList";

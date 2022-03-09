@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 
 import { Container, Row, Col, Card } from 'react-bootstrap'
-import $ from 'jquery'
-import { Author, PostCard } from '../../components/Posts/Post';
+
+import { Author } from '../../components/Posts/Post';
 import { useParams } from 'react-router-dom';
 import { useQuery, gql } from '@apollo/client';
 import ReactMarkdown from 'react-markdown'
@@ -62,13 +62,13 @@ function TableOfContent() {
         var toc = function () {
             var toc = "";
             var level = 0;
-            var maxLevel = 3;
+
 
             document.getElementById("contents").innerHTML =
                 document.getElementById("contents").innerHTML.replace(
                     /<h([\d])>([^<]+)<\/h([\d])>/gi,
                     function (str, openLevel, titleText, closeLevel) {
-                        if (openLevel != closeLevel) {
+                        if (openLevel !== closeLevel) {
 
                             return str + ' - ' + openLevel;
                         }

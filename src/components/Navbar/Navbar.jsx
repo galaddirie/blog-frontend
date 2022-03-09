@@ -1,7 +1,7 @@
 import "./Navbar.css"
 
-import React, { Component } from 'react'
-import { Navbar, Nav, Container, NavItem, } from 'react-bootstrap';
+import React from 'react'
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import MenuButtonToggle from "./MenuButton/MenuButton.jsx";
 
 import 'bootstrap-icons/font/bootstrap-icons.css'
@@ -19,7 +19,7 @@ function BlogNav() {
                         <Nav.Link className="nav-icon me-3" href="https://twitter.com/im_galad">
                             <i className="bi bi-twitter"></i>
                         </Nav.Link>
-                        <Nav.Link className="nav-icon" href="#">
+                        <Nav.Link className="nav-icon" href="https://discord.com/">
                             <i className="bi bi-discord"></i>
                         </Nav.Link>
                     </Nav>
@@ -40,7 +40,7 @@ function BlogNav() {
                             <span className="nav-link p-0"> Portfolio </span>
                             <div className="item-hover-underline"></div>
                         </NavLink>
-                        <a href={`https://im-galad.gumroad.com/`} target="_blank" className={`item-underline-container nav-link me-3 ${({ isActive }) => isActive ? "active" : "inactive"} `} >
+                        <a href={`https://im-galad.gumroad.com/`} target="_blank" rel="noreferrer" className={`item-underline-container nav-link me-3 ${({ isActive }) => isActive ? "active" : "inactive"} `} >
                             <span className="nav-link p-0"> shop </span>
                             <div className="item-hover-underline"></div>
                         </a>

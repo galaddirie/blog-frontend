@@ -1,7 +1,7 @@
 import "./Post.css"
 import React, { Component } from 'react'
 
-import { Container, Row, Col, Card, CardImg, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, CardImg } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
 
@@ -105,55 +105,56 @@ function FeaturePostLarge(props) {
 
     )
 }
-function PostCardOld(props) {
 
-    return (
-        <>
-            <Card className="border-1 shadow" style={{ overflow: 'hidden' }}>
+// function PostCardOld(props) {
 
-
-                <Row className="post-preview">
-
-                    <Col aria-modal={2} className="img-hover text-white px-lg-0">
-                        <img src={'http://localhost:1337' + props.data.cover.data.attributes.url} alt="" />
-                        <div className="hover-overlay"></div>
-                    </Col>
-                    <Col lg={9} className="">
-                        <Card.Body>
-                            <div className='tag-container'>
-                                {props.data.tags.data.map((tag) => {
-                                    return <Card.Tag key={tag.attributes.value} data={tag} />
-                                })}
-
-                            </div>
-                            <Link to={`/post/${props.data.slug}`} className="link-dark text-decoration-none">
-                                <h3 className="post-title">{props.data.title}</h3>
-                            </Link>
-
-                            <div>
-                                {props.data.blurb}
-
-                            </div>
-                            <div className="post-meta mt-2">
-                                <Author date={props.data.createdAt} />
-
-                            </div>
-
-                        </Card.Body>
-
-                    </Col>
+//     return (
+//         <>
+//             <Card className="border-1 shadow" style={{ overflow: 'hidden' }}>
 
 
+//                 <Row className="post-preview">
 
-                </Row>
+//                     <Col aria-modal={2} className="img-hover text-white px-lg-0">
+//                         <img src={'http://localhost:1337' + props.data.cover.data.attributes.url} alt="" />
+//                         <div className="hover-overlay"></div>
+//                     </Col>
+//                     <Col lg={9} className="">
+//                         <Card.Body>
+//                             <div className='tag-container'>
+//                                 {props.data.tags.data.map((tag) => {
+//                                     return <Card.Tag key={tag.attributes.value} data={tag} />
+//                                 })}
 
-            </Card>
-            <hr className="my-4" />
-        </>
+//                             </div>
+//                             <Link to={`/post/${props.data.slug}`} className="link-dark text-decoration-none">
+//                                 <h3 className="post-title">{props.data.title}</h3>
+//                             </Link>
+
+//                             <div>
+//                                 {props.data.blurb}
+
+//                             </div>
+//                             <div className="post-meta mt-2">
+//                                 <Author date={props.data.createdAt} />
+
+//                             </div>
+
+//                         </Card.Body>
+
+//                     </Col>
 
 
-    )
-}
+
+//                 </Row>
+
+//             </Card>
+//             <hr className="my-4" />
+//         </>
+
+
+//     )
+// }
 function PostCard(props) {
     return (
         <div className="blog-card my-4">

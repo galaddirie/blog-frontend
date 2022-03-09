@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import { Author } from "../../components/Posts/Post";
+
 
 export default function UserPage() {
     return (
@@ -9,7 +9,7 @@ export default function UserPage() {
                 <a className="nav-icon me-1" href="https://twitter.com/im_galad">
                     <i className="bi bi-twitter"></i>
                 </a>
-                <a className="nav-icon me-3" href="#">
+                <a className="nav-icon me-3" href="https://discord.com/">
                     <i className="bi bi-discord"></i>
                 </a>
             </div>
