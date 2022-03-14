@@ -88,7 +88,9 @@ function Hero() {
                             <Col xxl={6} lg={7} md={8}>
                                 <div className="my-5 text-center text-lg-start">
                                     <h1 className="display-5 fw-bolder  mb-2">[im_galad]</h1>
-                                    <p className="lead fw-normal mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular front-end open source toolkit!</p>
+                                    <h2 className="lead fst-italic fw-bold">stylized <span className='fw-normal'>/'stī(ə)līzd/</span></h2>
+                                    <p className='p-0 m-0'>depicted or treated in a mannered and nonrealistic style.</p>
+                                    <p className='mb-4 fst-italic'>"gracefully shaped vases decorated with stylized but recognizable white lilies"</p>
                                     <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                                         <Link to={`/blog`}><Button size='lg' variant="dark" className="px-4 me-sm-3">Blog</Button></Link>
                                         <a href='https://im-galad.gumroad.com/'><Button size='lg' variant='outline-dark' className="px-4 me-sm-3">Gumroad</Button></a>
