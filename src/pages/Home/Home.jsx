@@ -90,7 +90,7 @@ function Hero() {
                                     <h1 className="display-5 fw-bolder  mb-2">[im_galad]</h1>
                                     <h2 className="lead fst-italic fw-bold">stylized <span className='fw-normal'>/'stī(ə)līzd/</span></h2>
                                     <p className='p-0 m-0'>depicted or treated in a mannered and nonrealistic style.</p>
-                                    <p className='mb-4 fst-italic'>"gracefully shaped vases decorated with stylized but recognizable white lilies"</p>
+                                    <p className='mb-4 fst-italic'>"The rock drawings depict a variety of stylized mythological figures and patterns."</p>
                                     <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                                         <Link to={`/blog`}><Button size='lg' variant="dark" className="px-4 me-sm-3">Blog</Button></Link>
                                         <a href='https://im-galad.gumroad.com/'><Button size='lg' variant='outline-dark' className="px-4 me-sm-3">Gumroad</Button></a>
