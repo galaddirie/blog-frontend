@@ -30,6 +30,11 @@
     color: rgb(92, 92, 92);
     
 }
+
+
+.ascii-art{
+    text-align: left;
+}
 /* .openEyes{
     visibility: visible;
     opacity: 1;
