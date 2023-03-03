@@ -1,9 +1,9 @@
-.hero{
+.hero {
     width: 100%;
     overflow: hidden;
 }
 
-.hero-img-background{
+.hero-img-background {
     position: absolute;
     top: -50%;
     width: 100%;
@@ -12,29 +12,48 @@
 
 }
 
-.hero-img-background img{
+.hero-img-background img {
     position: absolute;
     top: 80px;
     left: -100px;
     width: 250%;
     z-index: -1;
-    
+
 
 }
 
-.btn-black-no-outline{
+.btn-black-no-outline {
     color: black;
 
 }
-.btn-black-no-outline:hover{
+
+.btn-black-no-outline:hover {
     color: rgb(92, 92, 92);
-    
+
 }
 
 
-.ascii-art{
+.ascii-art {
     text-align: left;
 }
+
+/*
+ANIMATED SVG LOGO
+*/
+
+
+#result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#result>svg {
+    height: 20rem;
+    width: 20rem;
+    overflow: visible;
+}
+
 /* .openEyes{
     visibility: visible;
     opacity: 1;
