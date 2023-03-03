@@ -28,19 +28,19 @@ function BlogNav() {
                 <MenuButtonToggle />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <NavLink to={`/`} className={`item-underline-container nav-link me-3 ${({ isActive }: boolean): string => isActive ? "active" : "inactive"} `} >
+                        <NavLink to={`/`} className={`item-underline-container nav-link me-3 ${({ isActive }: any): string => isActive ? "active" : "inactive"} `} >
                             <span className="nav-link p-0"> Home </span>
                             <div className="item-hover-underline"></div>
                         </NavLink>
-                        <NavLink to={`/blog`} className={`item-underline-container nav-link me-3 ${({ isActive }: boolean): string => isActive ? "active" : "inactive"} `} >
+                        <NavLink to={`/blog`} className={`item-underline-container nav-link me-3 ${({ isActive }: any): string => isActive ? "active" : "inactive"} `} >
                             <span className="nav-link p-0"> Blog </span>
                             <div className="item-hover-underline"></div>
                         </NavLink>
-                        <NavLink to={`/portfolio`} className={`item-underline-container nav-link me-3 ${({ isActive }: boolean): string => isActive ? "active" : "inactive"} `} >
+                        <NavLink to={`/portfolio`} className={`item-underline-container nav-link me-3 ${({ isActive }: any): string => isActive ? "active" : "inactive"} `} >
                             <span className="nav-link p-0"> Portfolio </span>
                             <div className="item-hover-underline"></div>
                         </NavLink>
-                        <a href={`https://im-galad.gumroad.com/`} target="_blank" rel="noreferrer" className={`item-underline-container nav-link me-3 ${({ isActive }: boolean): string => isActive ? "active" : "inactive"} `} >
+                        <a href={`https://im-galad.gumroad.com/`} target="_blank" rel="noreferrer" className={`item-underline-container nav-link me-3 ${({ isActive }: any): string => isActive ? "active" : "inactive"} `} >
                             <span className="nav-link p-0"> shop </span>
                             <div className="item-hover-underline"></div>
                         </a>
