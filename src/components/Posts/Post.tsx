@@ -4,18 +4,13 @@ import React, { Component } from 'react'
 import { Container, Row, Col, Card, CardImg } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
+import { Tag } from "../Card/Card";
 
 
-Card.Tag = (prop) => {
-    const tag = prop.data
-    return (
-        <Link to={`${/tag/ + tag.attributes.value}`} >
-            <div className="badge bg-gradient rounded-pill mb-2 me-2" style={{ 'backgroundColor': '#FF2867', }}>{tag.attributes.name}</div>
-        </Link>
-    )
+interface AuthorProps {
+    date: string
 }
-
-function Author({ date }) {
+function Author({ date }: AuthorProps) {
     var d = new Date(date)
 
     return (
@@ -29,7 +24,10 @@ function Author({ date }) {
     )
 }
 
-function FeaturedPostCard(props) {
+interface FeaturedPostCardProps {
+    data: any
+}
+function FeaturedPostCard(props: FeaturedPostCardProps) {
     var post = props.data
     console.log(post)
     return (
@@ -43,8 +41,8 @@ function FeaturedPostCard(props) {
                 </Link>
                 <Card.Body className="p-4">
                     <div className='tag-container'>
-                        {post.tags.data.map((tag) => {
-                            return <Card.Tag key={tag.attributes.value} data={tag} />
+                        {post.tags.data.map((tag: any) => {
+                            return <Tag key={tag.attributes.value} data={tag} />
                         })}
                     </div>
                     <div>
@@ -72,7 +70,11 @@ function FeaturedPostCard(props) {
         </Col >
     )
 }
-function FeaturePostLarge(props) {
+
+interface FeaturedPostLargeProps {
+    data: any
+}
+function FeaturePostLarge(props: FeaturedPostLargeProps) {
     var post = props.data.article.data.attributes
     return (
         <Card className="border-0 shadow rounded-3 overflow-hidden">
@@ -80,8 +82,8 @@ function FeaturePostLarge(props) {
                 <Row className="gx-0">
                     <Col lg={6} xl={5} className="py-lg-5">
                         <div className="p-4 p-md-5">
-                            {post.tags.data.map((tag) => {
-                                return <Card.Tag key={tag.attributes.value} data={tag} />
+                            {post.tags.data.map((tag: any) => {
+                                return <Tag key={tag.attributes.value} data={tag} />
                             })}
                             <div>
                                 <Link to={`/post/${post.slug}`} className="h2 fw-bolder text-decoration-none text-dark">{post.title}</Link>
@@ -123,7 +125,7 @@ function FeaturePostLarge(props) {
 //                         <Card.Body>
 //                             <div className='tag-container'>
 //                                 {props.data.tags.data.map((tag) => {
-//                                     return <Card.Tag key={tag.attributes.value} data={tag} />
+//                                     return <Tag key={tag.attributes.value} data={tag} />
 //                                 })}
 
 //                             </div>
@@ -155,7 +157,10 @@ function FeaturePostLarge(props) {
 
 //     )
 // }
-function PostCard(props) {
+interface PostCardProps {
+    data: any
+}
+function PostCard(props: PostCardProps) {
     return (
         <div className="blog-card my-4">
             <div className="meta">
@@ -166,8 +171,8 @@ function PostCard(props) {
             </div>
             <div className="description">
                 <div className='tag-container'>
-                    {props.data.tags.data.map((tag) => {
-                        return <Card.Tag key={tag.attributes.value} data={tag} />
+                    {props.data.tags.data.map((tag: any) => {
+                        return <Tag key={tag.attributes.value} data={tag} />
                     })}
 
                 </div>
@@ -248,7 +253,7 @@ function FeaturedPosts() {
                     </Col>
                 </Row>
                 <Row className="gx-5">
-                    {data.articles.data.map((post) => {
+                    {data.articles.data.map((post: any) => {
 
                         return < FeaturedPostCard key={post.id} data={post.attributes} />
                     })}

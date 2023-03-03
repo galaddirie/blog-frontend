@@ -6,6 +6,7 @@ import { Author } from '../../components/Posts/Post';
 import { useParams } from 'react-router-dom';
 import { useQuery, gql } from '@apollo/client';
 import ReactMarkdown from 'react-markdown'
+import { Tag } from '../../components/Card/Card'
 const ARTICLE = gql`
 query getArticle($slug: String!){
   articles(filters:{slug:{eq:$slug}}){
@@ -63,9 +64,10 @@ function TableOfContent() {
             var toc = "";
             var level = 0;
 
-
-            document.getElementById("contents").innerHTML =
-                document.getElementById("contents").innerHTML.replace(
+            var contents = document.getElementById("contents")
+            if (!contents) return;
+            contents.innerHTML =
+                contents.innerHTML.replace(
                     /<h([\d])>([^<]+)<\/h([\d])>/gi,
                     function (str, openLevel, titleText, closeLevel) {
                         if (openLevel !== closeLevel) {
@@ -93,8 +95,9 @@ function TableOfContent() {
             if (level) {
                 toc += (new Array(level + 1)).join("</ol>");
             }
-
-            document.getElementById("toc").innerHTML += toc;
+            const toc_element = document.getElementById("toc")
+            if (!toc_element) return;
+            toc_element.innerHTML += toc;
         };
 
         toc()
@@ -142,11 +145,15 @@ export default function BlogArticle() {
 
                                 <h1 className="fw-bolder mb-1">{post.title}</h1>
                                 <div className='tag-container'>
-                                    {post.tags.data.map((tag) => {
-                                        return <Card.Tag key={tag.attributes.value} data={tag} />
+                                    {post.tags.data.map((tag: any) => {
+
+                                        return <Tag key={tag.attributes.value} data={tag} />
                                     })}
                                 </div>
-                                <Author date={post.createdAt} className="mt-lg-5 mb-4" />
+                                <Author date={post.createdAt}
+                                    //@ts-ignore
+                                    className="mt-lg-5 mb-4"
+                                />
 
                             </header>
 

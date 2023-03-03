@@ -35,14 +35,13 @@ function SVGContainer() {
 
 
 
-    const cauluateWeights = (e) => {
-        const dist = (x1, y1, x2, y2) => {
+    const cauluateWeights = (e: MouseEvent): number[] => {
+        const dist = (x1: number, y1: number, x2: number, y2: number): number => {
             return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2))
         }
-        const bounds = e.target.getBoundingClientRect()
         let x = e.clientX / window.innerWidth
         let y = e.clientY / window.innerHeight
-        const clamp = (value, min, max) => {
+        const clamp = (value: number, min: number, max: number): number => {
             return Math.min(Math.max(value, min), max)
         }
 
@@ -64,7 +63,7 @@ function SVGContainer() {
 
     }
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
         const weights = cauluateWeights(e)
         setMorphed(morph(compiled, weights))
         console.log(weights)
@@ -170,11 +169,18 @@ function HeroLogo() {
 }
 
 function Hero() {
+    const ContainerProps = {
+        variant: "light"
+    }
     return (
         <header>
             <div className="hero">
+
                 <div className='py-5'>
-                    <Container className="px-5" variant="light">
+                    <Container className="px-5"
+                        // @ts-ignore
+                        variant="light"
+                    >
                         <div className="gx-5 align-items-center d-flex justify-content-center justify-content-lg-between">
                             <div className=''>
                                 <div className="my-5 text-center text-lg-start">

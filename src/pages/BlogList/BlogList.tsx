@@ -95,7 +95,7 @@ function PrimaryArticle() {
   if (error) return (<p>error</p>)
 
   return (<>
-    {data.primaryArticles.data.map((post) => {
+    {data.primaryArticles.data.map((post: any) => {
       console.log(data.primaryArticles.data)
       return <FeaturePostLarge key={`AOTD`} data={post.attributes} />
     })}
@@ -170,7 +170,7 @@ function ArticlesFromTags() {
       <h2 className="fw-bolder fs-1 mb-4">Tag: {data.tags.data[0].attributes.name}</h2>
       <div className='' >
         <Row>
-          {articles.data.map((post) => {
+          {articles.data.map((post: any) => {
             return <Col lg={6} className="card-parent-ignore">< PostCard key={post.id} data={post.attributes} /></Col>
           })}
         </Row>
@@ -194,13 +194,13 @@ export default function BlogList() {
         <p className="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <div className='' >
           <Row className='my-4'>
-            {data.articles.data.map((post) => {
+            {data.articles.data.map((post: any) => {
 
               return <Col lg={6} className="card-parent">< PostCard key={post.id} data={post.attributes} /></Col>
             })}
           </Row>
         </div>
-        <div class="blog-card-container">
+        <div className="blog-card-container">
 
 
 
