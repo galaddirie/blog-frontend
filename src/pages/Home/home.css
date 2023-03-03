@@ -1,6 +1,7 @@
 .hero {
     width: 100%;
     overflow: hidden;
+    height: 460px
 }
 
 .hero-img-background {
