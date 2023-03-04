@@ -4,7 +4,7 @@ The frontend portion of my blog application
 
 ## Demo
 ### Home Page
-![image](https://user-images.githubusercontent.com/70884733/162784202-9c238560-daa9-4e79-84df-4cac57390da7.png)
+![image](https://user-images.githubusercontent.com/70884733/222923459-a2f285c9-d6ad-4006-a6fb-a59ac5b8a261.png)
 
 ### Blog List
 ![image](https://user-images.githubusercontent.com/70884733/162784397-e691ca44-c7fa-43fd-b28c-1ced0ed4445d.png)
